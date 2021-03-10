@@ -2146,7 +2146,7 @@ const acrcloud = require("acrcloud")
 			const acr = new acrcloud({ host: "https://console.acrcloud.com/account#/v1/identify", access_key: "GGuFazTVeP7mrDxG", access_secret: "5AGJ7ZHj3oc0X58JkpWX5BpGOwk7C187"})
 			case 'totitle':
 			case 'carilagu':
-                if (isMedia && isAudio || isQuotedAudio || isVoice || isQuotedVoice) {
+                if (isMedia && isAudio) {
                     await piyo.reply(from, ind.wait(), id)
                     const encryptMedia = isQuotedAudio || isQuotedVoice ? quotedMsg : message
                     console.log(color('[WAPI]', 'green'), 'Downloading and decrypting media...')
